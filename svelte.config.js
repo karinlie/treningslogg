@@ -7,16 +7,18 @@ const config = {
 	// for more information about preprocessors
 	preprocess: preprocess(),
 
-	 // https://kit.svelte.dev/docs/adapters
-	 adapter: adapter({
-		// default options are shown. On some platforms
-		// these options are set automatically — see below
-		pages: 'build',
-		assets: 'build',
-		fallback: null,
-		precompress: false
-	  }),
-	  trailingSlash: 'always',
+	kit: {
+		// https://kit.svelte.dev/docs/adapters
+		adapter: adapter({
+			// default options are shown. On some platforms
+			// these options are set automatically — see below
+			pages: 'build',
+			assets: 'build',
+			fallback: null,
+			precompress: false
+		}),
+		trailingSlash: 'always',
+	}
 };
 
 export default config;
